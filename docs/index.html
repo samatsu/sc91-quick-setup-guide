@@ -28,7 +28,9 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="必要なソフトウェア のインストール" href="prerequisites/index.html" /> 
+    <link rel="next" title="必要なソフトウェア のインストール" href="prerequisites/index.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -151,7 +153,8 @@
   <div class="section" id="sitecore-9-1">
 <h1>Sitecore 9.1 クイックセットアップガイド<a class="headerlink" href="#sitecore-9-1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>このドキュメントでは、Sitecore ９.1 の評価および開発用に、単一サーバーで動作するオールインワンの環境(XP0)を構築する手順を記載します。
-インストールに利用したソフトウェアのバージョンは次の通りです。</p>
+インストール手順はSitecore 9.1の本体をダウンロードできるページの Quick Installation Guideをベースにしていますので、記載内容が不明な場合はそちらも併せて確認してください。</p>
+<p>インストールに利用したソフトウェアのバージョンは次の通りです。</p>
 <table border="1" class="docutils" id="id1">
 <caption><span class="caption-text">セットアップに必要なソフトウェアとバージョン</span><a class="headerlink" href="#id1" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
@@ -191,7 +194,7 @@ Sitecoreのバージョンごとに必要なソフトウェアのバージョン
 </div>
 <p>このドキュメントは Windows Server がクリーンインストールされた環境がある前提で、必要なミドルウェアおよびSitecoreのセットアップを行う手順を記載していきます。
 本ドキュメントでは記載しませんが、Sitecore環境セットアップ後に、開発用にVisual Studioをセットアップしたい場合は、Visual Studio Community EditionをWebから
-無償で入手することができます。そのほか、Solr, SQL Server DeveloperエディションもWebから無償で入手できます。</p>
+無償で入手することができます。SQL Server DeveloperエディションもWebから無償で入手できます。Sitecore, Solrに関しては、ドキュメントの中にダウンロード方法が記載されています。</p>
 <div class="admonition note">
 <p class="first admonition-title">注釈</p>
 <p class="last">セットアップはインターネットに接続している環境で行ってください</p>
@@ -210,15 +213,14 @@ Sitecoreのバージョンごとに必要なソフトウェアのバージョン
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="installation/index.html">Sitecore のインストール</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation/sif.html">SIFのセットアップ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation/sitecore.html">Sitecoreのセットアップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/download.html">インストール用パッケージのダウンロードとライセンスの配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/pre-steps.html">必須プログラムのインストールスクリプトを実行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/install.html">Sitecoreのセットアップ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation/post-steps.html">インストール後の処理</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="misc/index.html">補足情報</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="misc/registoryerror.html">レジストリ キー へのアクセスが拒否されました。エラーの回避</a></li>
 <li class="toctree-l2"><a class="reference internal" href="misc/japaneseui.html">日本語化の設定</a></li>
-<li class="toctree-l2"><a class="reference internal" href="misc/video.html">インストール手順の動画</a></li>
 </ul>
 </li>
 </ul>

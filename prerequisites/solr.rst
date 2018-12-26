@@ -34,7 +34,7 @@ Solr 7.2.1 が動作するには Java 8 以降がインストールされてい�
 
 Solrのインストール
 ================================================================
-続いて、Solrをインストールします。といってもzipファイルをダウンロードして展開するだけです。
+続いて、Solrをインストールします。基本的にはzipファイルをダウンロードして展開するだけです。
 
 `ここ <http://archive.apache.org/dist/lucene/solr/7.2.1/>`__ から、 ``solr-7.2.1.zip`` をダウンロードします。
 
@@ -82,7 +82,7 @@ jksファイルから、p12 ファイルを作成します。
 
 .. figure:: /images/prerequisites/pre-solr04.png
 
-``solr-ssl.keystore.jks`` および、 ``solr-ssl.keystore.p12`` ファイルが作成されていることを確認してください。
+コマンドを実行したフォルダーに ``solr-ssl.keystore.jks`` および、 ``solr-ssl.keystore.p12`` ファイルが作成されていることを確認してください。
 
 作成した証明書は、Sitecoreおよび、xConnectが動作するサーバーにインストールします。今回は、スタンドアロン環境なので、Solrをセットアップしたマシンにインストールします。
 
@@ -166,10 +166,10 @@ Solrで、jksファイルを使用するように設定ファイルを変更し�
 
 SolrをWindowsサービスとして動作するように構成
 ================================================================
-`NSSM <https://nssm.cc>`__を使用して、SolrをWindowsサービスとして動作するようにします。
+`NSSM <https://nssm.cc>`__ を使用して、SolrをWindowsサービスとして動作するようにします。
 
-`ダウンロードページ <https://nssm.cc/download>`__にアクセスして、最新のプログラムをダウンロードします。本ドキュメント作成時点の最新のバージョンは2.24です。
-``nssm-2.24.zip`` を展開します。今回は、した図のように``C:\Program Files\nssm-2.24`` に展開したファイルを配置しました。
+`ダウンロードページ <https://nssm.cc/download>`__ にアクセスして、最新のプログラムをダウンロードします。本ドキュメント作成時点の最新のバージョンは2.24です。
+``nssm-2.24.zip`` を展開します。今回は、次の図のように ``C:\Program Files\nssm-2.24`` に展開したファイルを配置しました。
 
 .. figure:: /images/prerequisites/pre-solr14.png
 
@@ -181,7 +181,7 @@ SolrをWindowsサービスとして動作するように構成
 
 .. figure:: /images/prerequisites/pre-solr15.png
 
-ダイアログが表示されるので、 **Application** タブのPath, Startup directory, Argumentを設定します。必要に応じて適宜パラメーターを変更してください。
+ダイアログが表示されるので、 **Application** タブのPath, Startup directory, Argument, Service nameを設定します。必要に応じて適宜パラメーターを変更してください。
 
 
 パラメーターを設定後 **Install service** ボタンをクリックします。
@@ -200,7 +200,7 @@ SolrをWindowsサービスとして動作するように構成
 
 .. figure:: /images/prerequisites/pre-solr17.png
 
-``Win+r`` をタイプしてファイル名を指定して実行を表示して、``services.msc`` を入力して、サービススナップインを起動します。solr-7.2.1 を見つけて、
+``Win+r`` をタイプして **ファイル名を指定して実行** を表示して、``services.msc`` を入力して、サービススナップインを起動します。solr-7.2.1 を見つけて、
 開始し、 ``https://localhost:8983/solr`` にアクセスできることを確認します。
 
 .. figure:: /images/prerequisites/pre-solr18.png

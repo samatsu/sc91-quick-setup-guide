@@ -29,7 +29,9 @@
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Sitecore のインストール" href="../installation/index.html" />
-    <link rel="prev" title="SIFのインストール" href="sif.html" /> 
+    <link rel="prev" title="SIFのインストール" href="sif.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -192,7 +194,7 @@ java version <span class="s2">&quot;1.8.0_192&quot;</span>
 </div>
 <div class="section" id="id1">
 <h2>Solrのインストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>続いて、Solrをインストールします。といってもzipファイルをダウンロードして展開するだけです。</p>
+<p>続いて、Solrをインストールします。基本的にはzipファイルをダウンロードして展開するだけです。</p>
 <p><a class="reference external" href="http://archive.apache.org/dist/lucene/solr/7.2.1/">ここ</a> から、 <code class="docutils literal notranslate"><span class="pre">solr-7.2.1.zip</span></code> をダウンロードします。</p>
 <p>ダウンロードしたファイルを <strong>右クリック &gt; プロパティ</strong> で、 <strong>ブロックの解除</strong> を選択して、<strong>適用ボタン</strong> をクリックします。</p>
 <p>zipファイルを展開し、適当な場所に配置します。今回は、 <code class="docutils literal notranslate"><span class="pre">C:\</span></code> 直下に、展開した <code class="docutils literal notranslate"><span class="pre">solr-7.2.1</span></code> フォルダーにzipファイルを展開した前提で、手順を記載します。</p>
@@ -234,7 +236,7 @@ java version <span class="s2">&quot;1.8.0_192&quot;</span>
 <div class="figure">
 <img alt="../_images/pre-solr04.png" src="../_images/pre-solr04.png" />
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">solr-ssl.keystore.jks</span></code> および、 <code class="docutils literal notranslate"><span class="pre">solr-ssl.keystore.p12</span></code> ファイルが作成されていることを確認してください。</p>
+<p>コマンドを実行したフォルダーに <code class="docutils literal notranslate"><span class="pre">solr-ssl.keystore.jks</span></code> および、 <code class="docutils literal notranslate"><span class="pre">solr-ssl.keystore.p12</span></code> ファイルが作成されていることを確認してください。</p>
 <p>作成した証明書は、Sitecoreおよび、xConnectが動作するサーバーにインストールします。今回は、スタンドアロン環境なので、Solrをセットアップしたマシンにインストールします。</p>
 <p>p12ファイルを右クリックし、 <strong>PFXのインストール</strong> をクリックします。</p>
 <div class="figure">
@@ -307,9 +309,9 @@ java version <span class="s2">&quot;1.8.0_192&quot;</span>
 </div>
 <div class="section" id="solrwindows">
 <h2>SolrをWindowsサービスとして動作するように構成<a class="headerlink" href="#solrwindows" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p><a href="#id3"><span class="problematic" id="id4">`</span></a>NSSM &lt;<a class="reference external" href="https://nssm.cc">https://nssm.cc</a>&gt;`__を使用して、SolrをWindowsサービスとして動作するようにします。</p>
-<p><cite>ダウンロードページ &lt;https://nssm.cc/download&gt;`__にアクセスして、最新のプログラムをダウンロードします。本ドキュメント作成時点の最新のバージョンは2.24です。
-``nssm-2.24.zip`</cite> を展開します。今回は、した図のように``C:Program Filesnssm-2.24`` に展開したファイルを配置しました。</p>
+<p><a class="reference external" href="https://nssm.cc">NSSM</a> を使用して、SolrをWindowsサービスとして動作するようにします。</p>
+<p><a class="reference external" href="https://nssm.cc/download">ダウンロードページ</a> にアクセスして、最新のプログラムをダウンロードします。本ドキュメント作成時点の最新のバージョンは2.24です。
+<code class="docutils literal notranslate"><span class="pre">nssm-2.24.zip</span></code> を展開します。今回は、次の図のように <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files\nssm-2.24</span></code> に展開したファイルを配置しました。</p>
 <div class="figure">
 <img alt="../_images/pre-solr14.png" src="../_images/pre-solr14.png" />
 </div>
@@ -320,10 +322,10 @@ java version <span class="s2">&quot;1.8.0_192&quot;</span>
 <div class="figure">
 <img alt="../_images/pre-solr15.png" src="../_images/pre-solr15.png" />
 </div>
-<p>ダイアログが表示されるので、 <strong>Application</strong> タブのPath, Startup directory, Argumentを設定します。必要に応じて適宜パラメーターを変更してください。</p>
+<p>ダイアログが表示されるので、 <strong>Application</strong> タブのPath, Startup directory, Argument, Service nameを設定します。必要に応じて適宜パラメーターを変更してください。</p>
 <p>パラメーターを設定後 <strong>Install service</strong> ボタンをクリックします。</p>
-<table border="1" class="docutils" id="id5">
-<caption><span class="caption-text">パラメーター</span><a class="headerlink" href="#id5" title="このテーブルへのパーマリンク">¶</a></caption>
+<table border="1" class="docutils" id="id3">
+<caption><span class="caption-text">パラメーター</span><a class="headerlink" href="#id3" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
@@ -355,7 +357,7 @@ java version <span class="s2">&quot;1.8.0_192&quot;</span>
 <div class="figure">
 <img alt="../_images/pre-solr17.png" src="../_images/pre-solr17.png" />
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">Win+r</span></code> をタイプしてファイル名を指定して実行を表示して、<code class="docutils literal notranslate"><span class="pre">services.msc</span></code> を入力して、サービススナップインを起動します。solr-7.2.1 を見つけて、
+<p><code class="docutils literal notranslate"><span class="pre">Win+r</span></code> をタイプして <strong>ファイル名を指定して実行</strong> を表示して、<code class="docutils literal notranslate"><span class="pre">services.msc</span></code> を入力して、サービススナップインを起動します。solr-7.2.1 を見つけて、
 開始し、 <code class="docutils literal notranslate"><span class="pre">https://localhost:8983/solr</span></code> にアクセスできることを確認します。</p>
 <div class="figure">
 <img alt="../_images/pre-solr18.png" src="../_images/pre-solr18.png" />

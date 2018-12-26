@@ -28,8 +28,10 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="SIFのセットアップ" href="sif.html" />
-    <link rel="prev" title="Solrのセットアップ" href="../prerequisites/solr.html" /> 
+    <link rel="next" title="インストール用パッケージのダウンロードとライセンスの配置" href="download.html" />
+    <link rel="prev" title="Solrのセットアップ" href="../prerequisites/solr.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -86,8 +88,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../prerequisites/index.html">必要なソフトウェア のインストール</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Sitecore のインストール</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="sif.html">SIFのセットアップ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sitecore.html">Sitecoreのセットアップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html">インストール用パッケージのダウンロードとライセンスの配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pre-steps.html">必須プログラムのインストールスクリプトを実行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Sitecoreのセットアップ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="post-steps.html">インストール後の処理</a></li>
 </ul>
 </li>
@@ -159,26 +162,22 @@
 <p>事前準備が終わったら、Sitecoreのインストールを行います。</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="sif.html">SIFのセットアップ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="sif.html#id1">SIFのインストール</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sif.html#id2">SIFの動作確認</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">インストール用パッケージのダウンロードとライセンスの配置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="download.html#id2">パッケージのダウンロード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html#id3">ファイルの配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html#id4">ライセンスファイルの配置</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="sitecore.html">Sitecoreのセットアップ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="sitecore.html#id1">リソースのダウンロード</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sitecore.html#install">Install スクリプトの準備</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sitecore.html#id2">ライセンスファイルの準備</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sitecore.html#id3">Install スクリプトの実行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pre-steps.html">必須プログラムのインストールスクリプトを実行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Sitecoreのセットアップ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#id1">Sitecoreのインストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#id2">インストール内容の確認</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="post-steps.html">インストール後の処理</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="post-steps.html#xdb">xDBシャードデータベース用のデータベースユーザーの作成</a></li>
-<li class="toctree-l2"><a class="reference internal" href="post-steps.html#id2">インデックスのリビルド</a></li>
-<li class="toctree-l2"><a class="reference internal" href="post-steps.html#id3">リンクデータベースのリビルド</a></li>
-<li class="toctree-l2"><a class="reference internal" href="post-steps.html#id4">マーケティング定義の配置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="post-steps.html#expires">静的コンテンツに対する Expires ヘッダーの設定</a></li>
-<li class="toctree-l2"><a class="reference internal" href="post-steps.html#ip">IPジオロケーションルックアップ処理の無効化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="post-steps.html#iis">IISの再起動</a></li>
+<li class="toctree-l2"><a class="reference internal" href="post-steps.html#sitecore">Sitecoreの初期化処理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="post-steps.html#iis">IISの静的コンテンツのキャッシュの設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="post-steps.html#id2">パフォーマンスカウンター用のセキュリティー設定</a></li>
 </ul>
 </li>
 </ul>
@@ -193,7 +192,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sif.html" class="btn btn-neutral float-right" title="SIFのセットアップ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="download.html" class="btn btn-neutral float-right" title="インストール用パッケージのダウンロードとライセンスの配置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../prerequisites/solr.html" class="btn btn-neutral" title="Solrのセットアップ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

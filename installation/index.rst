@@ -6,6 +6,7 @@ Sitecore のインストール
 .. toctree:: 
    :maxdepth: 2
 
-   sif
-   sitecore
+   download
+   pre-steps
+   install
    post-steps
