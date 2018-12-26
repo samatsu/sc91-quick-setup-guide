@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sitecore 9.1 クイックセットアップガイド &mdash; クイックセットアップガイド 1.0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="必要なソフトウェア のインストール" href="prerequisites/index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> クイックセットアップガイド
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Sitecore Experience Platform 9.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">コンテンツ:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="prerequisites/index.html">必要なソフトウェア のインストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/index.html">Sitecore のインストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc/index.html">補足情報</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">クイックセットアップガイド</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Sitecore 9.1 クイックセットアップガイド</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sitecore-9-1">
+<h1>Sitecore 9.1 クイックセットアップガイド<a class="headerlink" href="#sitecore-9-1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメントでは、Sitecore ９.1 の評価および開発用に、単一サーバーで動作するオールインワンの環境(XP0)を構築する手順を記載します。
+インストールに利用したソフトウェアのバージョンは次の通りです。</p>
+<table border="1" class="docutils" id="id1">
+<caption><span class="caption-text">セットアップに必要なソフトウェアとバージョン</span><a class="headerlink" href="#id1" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">名前</th>
+<th class="head">バージョン</th>
+<th class="head">備考</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Windows</td>
+<td>Winhdows Server 2016 Standard</td>
+<td>デスクトップエクスペリエンス</td>
+</tr>
+<tr class="row-odd"><td>SQL Server</td>
+<td>SQL Server 2017 Developer Edition</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Solr</td>
+<td>7.2.1</td>
+<td>バージョンに対応したJavaもインストールする必要があります</td>
+</tr>
+<tr class="row-odd"><td>Sitecore</td>
+<td>9.1 Initial Release</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">セットアップに必要なソフトウェアの種類とバージョンはセットアップを行うSitecoreのバージョン用のインストールドキュメントを参照してください。
+Sitecoreのバージョンごとに必要なソフトウェアのバージョンは`KBのサイト &lt;<a class="reference external" href="https://kb.sitecore.net/articles/087164">https://kb.sitecore.net/articles/087164</a>&gt;`__を使用すると、一覧で確認することができます。</p>
+</div>
+<p>このドキュメントは Windows Server がクリーンインストールされた環境がある前提で、必要なミドルウェアおよびSitecoreのセットアップを行う手順を記載していきます。
+本ドキュメントでは記載しませんが、Sitecore環境セットアップ後に、開発用にVisual Studioをセットアップしたい場合は、Visual Studio Community EditionをWebから
+無償で入手することができます。そのほか、Solr, SQL Server DeveloperエディションもWebから無償で入手できます。</p>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">セットアップはインターネットに接続している環境で行ってください</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">スタンドアロン(XP0)環境を構築する場合は、 Windows Server 2016以降かWindows 10をご利用ください。</p>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">コンテンツ:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="prerequisites/index.html">必要なソフトウェア のインストール</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites/sql-server.html">SQL Serverのセットアップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites/sif.html">SIFのインストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites/solr.html">Solrのセットアップ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation/index.html">Sitecore のインストール</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/sif.html">SIFのセットアップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/sitecore.html">Sitecoreのセットアップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/post-steps.html">インストール後の処理</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc/index.html">補足情報</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="misc/registoryerror.html">レジストリ キー へのアクセスが拒否されました。エラーの回避</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/japaneseui.html">日本語化の設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/video.html">インストール手順の動画</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="prerequisites/index.html" class="btn btn-neutral float-right" title="必要なソフトウェア のインストール" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, samatsu
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
