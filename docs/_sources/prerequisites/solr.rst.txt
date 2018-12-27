@@ -189,8 +189,8 @@ SolrをWindowsサービスとして動作するように構成
 .. csv-table:: パラメーター
    :header: "名前", "設定値例" 
 
-    "Path", "C:\solr-7.2.1\bin\solr.cmd"
-    "Startup directory", "C:\solr-7.2.1\bin"
+    "Path", "C:\\solr-7.2.1\\bin\\solr.cmd"
+    "Startup directory", "C:\\solr-7.2.1\\bin"
     "Arguments", "start -f -p 8983"
     "Service name", "solr-7.2.1"
 

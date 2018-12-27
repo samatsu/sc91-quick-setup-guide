@@ -12,15 +12,15 @@ SQL Server 2017 のインストール
 
 表示された画面で、 **SQL Server の新規スタンドアロン インストールを実行するか、既存のインストールに機能を追加** を選択します。
 
-.. note:: SQL Server Management Toolsのインストールをクリックすると、SQL Server Management Studioのインストーラーをダウンロードできるページにアクセスできます。
-
 .. figure:: /images/prerequisites/pre-sql02.png
+
+.. note:: SQL Server Management Toolsのインストールをクリックすると、SQL Server Management Studioのインストーラーをダウンロードできるページにアクセスできます。
 
 プロダクトキー画面で必要に応じて、 プロダクトキーを入力します。 **次へ** をクリックします。
 
-.. note:: Developer Edition の場合は、入力する必要はありません。
-
 .. figure:: /images/prerequisites/pre-sql03.png
+
+.. note:: Developer Edition の場合は、入力する必要はありません。
 
 ライセンス条項画面が表示されたら、 **ライセンスに同意します。**  を選択して、 **次へ** をクリック。
 
@@ -48,7 +48,7 @@ Microsoft Update 画面が表示されたら、 **Microsoft Update を使用し�
 
 .. figure:: /images/prerequisites/pre-sql09.png
 
-データベースエンジンの構成 画面が表示されます。サーバーの構成タブの認証モードを次のように変更して**次へ** をクリックします。
+データベースエンジンの構成 画面が表示されます。サーバーの構成タブの認証モードを次のように変更して **次へ** をクリックします。
 
 * 認証モードで混合モード（SQL Server認証とWindows認証）を選択
 * SQL Serverのシステム管理者(sa)用に、**パスワードの入力**と**パスワードの確認入力** に saユーザーのパスワードを入力
@@ -101,7 +101,7 @@ SQL Server の構成
 
 .. figure:: /images/prerequisites/pre-ssms06.png
 
-次のコードを入力して、 ``F5`` キーをタイプするか、 ツールバーの実行ボタンをクリックします。
+次のクエリを入力して、 ``F5`` キーをタイプするか、 ツールバーの実行ボタンをクリックします。
 
 .. code-block:: sql
 

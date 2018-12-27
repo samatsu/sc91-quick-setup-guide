@@ -11,13 +11,13 @@ PowerShell のバージョン確認
 
 Sitecore 9.1の場合、PowerShell は5.1 以降のバージョンが必要です。 Windows Server 2016の場合特に問題ないと思いますが、念のため確認します。
 
-PowerShellを起動して、``$PSVersionTable`` と入力して実行します。
+PowerShellを起動して、``$PSVersionTable`` と入力して実行し、`PSVersion` を確認します。
 
 .. figure:: /images/prerequisites/pre-sif01.png
 
 SIFのインストール
 ====================================================================
-Sitecore 9.2の場合は、SIF 2.0.0 以降のバージョンが必要です。
+Sitecore 9.1の場合は、SIF 2.0.0 以降のバージョンが必要です。
 管理者としてPowerShell を起動し、次のコマンドを実行してリポジトリを登録します。
 確認メッセージが表示されたら ``y`` を入力します。
 
@@ -25,7 +25,7 @@ Sitecore 9.2の場合は、SIF 2.0.0 以降のバージョンが必要です。
 
    Register-PSRepository -Name SitecoreGallery -SourceLocation https://sitecore.myget.org/F/sc-powershell/api/v2
 
-リポジトリ登録後、SIFをインストールします。確認メッセージが表示されたら ``y`` を入力します。
+リポジトリ登録後、下記コマンドでSIFをインストールします。確認メッセージが表示されたら ``y`` を入力します。
 
 .. code:: powershell
 

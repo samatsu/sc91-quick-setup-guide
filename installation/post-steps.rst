@@ -5,8 +5,8 @@ Sitecoreをインストールしたら、 Installation Guide (Quick Installation
 
 Sitecoreの初期化処理
 ================================================================
-ラウンチパッドにログインし、コントロールパネルを起動します。今回のケースでは、ブラウザーで ``http://sc910.sc/sitecore`` にアクセスし、adminユーザーでログイン後に表示される
-ラウンチパッドの Control Panel をダブルクリックします。
+ラウンチパッドにログインし、 **Control Panel** を起動します。今回のケースでは、ブラウザーで ``http://sc910.sc/sitecore`` にアクセスし、adminユーザーでログイン後に表示される
+ラウンチパッドの Control Panel をクリックします。
 Indexing Manager を起動して、すべてのインデックスを選択して、**Rebuild** をクリックしてリビルドします。
 
 .. figure:: /images/installation/ins-post01.png

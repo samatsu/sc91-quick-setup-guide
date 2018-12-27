@@ -22,11 +22,11 @@ zipファイルを ``右クリック > プロパティ``  を選択してブロ�
 ファイルの配置
 ================================================================
 展開したファイルの中にある、XP0 Configuration files 9.1.0 rev. 001564.zip を展開します。
-展開したフォルダーの中にあるファイルをすべて、``C:\resourcefiles`` に移動します。
+展開したフォルダーの中にあるすべてのファイルを、``C:\resourcefiles`` **直下** に移動します。
 
 .. figure:: /images/installation/ins-down02.png
 
-ダウンロードしたzipファイルのあった、残りの Sitecore, Xconnect, IdentityServer 用の WDPパッケージも ``C:\resourcefiles`` に移動します。
+ダウンロードしたzipファイルのあった、残りの Sitecore, Xconnect, IdentityServer 用の WDPパッケージも ``C:\resourcefiles`` **直下** に移動します。
 
 .. figure:: /images/installation/ins-down03.png
 

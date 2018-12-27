@@ -7,8 +7,8 @@ Sitecoreの編集環境とデフォルトのライブサイトのデフォルト
 
 日本語の言語アイテムの追加
 ================================================================
-Sitecoreの編集環境にログインしてコントロールパネルを起動します。
-コントロールパネルの中の **LOCALIZATION > Add a new language** を選択します。
+Sitecoreの編集環境にログインして **Control Panel** を起動します。
+Control Panel の中の **LOCALIZATION > Add a new language** を選択します。
 ここで日本語を選択して追加します。
 
 .. figure:: /images/misc/misc-japanese-ui01.png
@@ -18,9 +18,9 @@ Sitecoreの編集環境にログインしてコントロールパネルを起動
 ================================================================
 インクルートファイルを有効化することで、次の言語をデフォルトで日本語にします。
 
-* Sitecore クライアントインタフェース
-* 編集するコンテンツの言語
-* デフォルトのライブサイトの言語
+* Sitecore クライアントインタフェースの言語
+* 編集するコンテンツのデフォルトの言語
+* デフォルトのライブサイトのデフォルトの言語
 
 Sitecore がインストールされたフォルダーの ``App_Config\Include\Examples`` をエクスプローラーで開きます。 例えば、 ``C:\inetpub\wwwroot\sc910.sc\App_Config\Include\Examples`` となります。
 フォルダーの、``ja-JP.config.example`` を ``ja-JP.config`` にリネームします。

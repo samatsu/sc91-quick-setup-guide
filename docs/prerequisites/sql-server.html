@@ -173,20 +173,20 @@
 <img alt="../_images/pre-sql01.png" src="../_images/pre-sql01.png" />
 </div>
 <p>表示された画面で、 <strong>SQL Server の新規スタンドアロン インストールを実行するか、既存のインストールに機能を追加</strong> を選択します。</p>
+<div class="figure">
+<img alt="../_images/pre-sql02.png" src="../_images/pre-sql02.png" />
+</div>
 <div class="admonition note">
 <p class="first admonition-title">注釈</p>
 <p class="last">SQL Server Management Toolsのインストールをクリックすると、SQL Server Management Studioのインストーラーをダウンロードできるページにアクセスできます。</p>
 </div>
-<div class="figure">
-<img alt="../_images/pre-sql02.png" src="../_images/pre-sql02.png" />
-</div>
 <p>プロダクトキー画面で必要に応じて、 プロダクトキーを入力します。 <strong>次へ</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/pre-sql03.png" src="../_images/pre-sql03.png" />
+</div>
 <div class="admonition note">
 <p class="first admonition-title">注釈</p>
 <p class="last">Developer Edition の場合は、入力する必要はありません。</p>
-</div>
-<div class="figure">
-<img alt="../_images/pre-sql03.png" src="../_images/pre-sql03.png" />
 </div>
 <p>ライセンス条項画面が表示されたら、 <strong>ライセンスに同意します。</strong>  を選択して、 <strong>次へ</strong> をクリック。</p>
 <div class="figure">
@@ -216,7 +216,7 @@
 <div class="figure">
 <img alt="../_images/pre-sql09.png" src="../_images/pre-sql09.png" />
 </div>
-<p>データベースエンジンの構成 画面が表示されます。サーバーの構成タブの認証モードを次のように変更して**次へ** をクリックします。</p>
+<p>データベースエンジンの構成 画面が表示されます。サーバーの構成タブの認証モードを次のように変更して <strong>次へ</strong> をクリックします。</p>
 <ul class="simple">
 <li>認証モードで混合モード（SQL Server認証とWindows認証）を選択</li>
 <li>SQL Serverのシステム管理者(sa)用に、<strong>パスワードの入力**と**パスワードの確認入力</strong> に saユーザーのパスワードを入力</li>
@@ -272,7 +272,7 @@
 <div class="figure">
 <img alt="../_images/pre-ssms06.png" src="../_images/pre-ssms06.png" />
 </div>
-<p>次のコードを入力して、 <code class="docutils literal notranslate"><span class="pre">F5</span></code> キーをタイプするか、 ツールバーの実行ボタンをクリックします。</p>
+<p>次のクエリを入力して、 <code class="docutils literal notranslate"><span class="pre">F5</span></code> キーをタイプするか、 ツールバーの実行ボタンをクリックします。</p>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="n">sp_configure</span> <span class="s1">&#39;contained database authentication&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">;</span>
 <span class="k">GO</span>
 <span class="n">RECONFIGURE</span><span class="p">;</span>
