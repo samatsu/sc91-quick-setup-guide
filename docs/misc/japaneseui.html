@@ -89,8 +89,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Sitecore のインストール</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">補足情報</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">日本語化の設定</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">日本語の言語アイテムの追加</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">日本語をデフォルトにするインクルードファイルを配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installlanguage-aspx">方法 1: InstallLanguage.aspxを使用する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ja-jp-config">方法 2: 手動で日本語アイテムを作成し、ja-jp.config ファイルを有効化</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">日本語の言語アイテムの追加</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">日本語をデフォルトにするインクルードファイルを有効化</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -162,9 +166,24 @@
   <div class="section" id="id1">
 <h1>日本語化の設定<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>Sitecoreの編集環境とデフォルトのライブサイトのデフォルトの言語を日本語にする方法を記載します。</p>
-<p>手順としては次の通りです。</p>
+<p>手順としては次の2つの方法があります。</p>
+<div class="section" id="installlanguage-aspx">
+<h2>方法 1: InstallLanguage.aspxを使用する<a class="headerlink" href="#installlanguage-aspx" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>InstallLanguage 管理ツールを使用して編集ツールや編集言語のデフォルトを日本語にすることができます。
+ツールは /sitecore/admin/InstallLanguage.aspx というパスでアクセスできます。今回の例では、 <code class="docutils literal notranslate"><span class="pre">http://sc910.sc/sitecore/admin/InstallLanguage.aspx</span></code> にアクセスします。
+このページで、Japanese(Japan)を選択します。 <cite>Run the website an the Sitecore UI in this language</cite> をチェックして、 <strong>Install</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/misc-japanese-ui03.png" src="../_images/misc-japanese-ui03.png" />
+</div>
+<p>処理に成功すると、Sitecoreがインストールされたフォルダー(今回の場合 <cite>C:\inetpub\wwwroot\sc910.sc</cite> ) の <cite>App_Config\Include\</cite> フォルダー配下に
+<strong>Sitecore.DefaultLanguage.config</strong> という名前のパッチファイルが作成されます。</p>
+</div>
+<div class="section" id="ja-jp-config">
+<h2>方法 2: 手動で日本語アイテムを作成し、ja-jp.config ファイルを有効化<a class="headerlink" href="#ja-jp-config" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Sitecoreの編集画面から、日本語の言語アイテムを作成し、サンプルのja-jp.config.example を
+有効化することでデフォルトの言語を日本語にすることができます。</p>
 <div class="section" id="id2">
-<h2>日本語の言語アイテムの追加<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h3>日本語の言語アイテムの追加<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Sitecoreの編集環境にログインして <strong>Control Panel</strong> を起動します。
 Control Panel の中の <strong>LOCALIZATION &gt; Add a new language</strong> を選択します。
 ここで日本語を選択して追加します。</p>
@@ -173,7 +192,7 @@ Control Panel の中の <strong>LOCALIZATION &gt; Add a new language</strong> �
 </div>
 </div>
 <div class="section" id="id3">
-<h2>日本語をデフォルトにするインクルードファイルを配置<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h3>日本語をデフォルトにするインクルードファイルを有効化<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>インクルートファイルを有効化することで、次の言語をデフォルトで日本語にします。</p>
 <ul class="simple">
 <li>Sitecore クライアントインタフェースの言語</li>
@@ -187,6 +206,7 @@ Control Panel の中の <strong>LOCALIZATION &gt; Add a new language</strong> �
 </div>
 <p>ファイルを開くと、shell のサイト(コンテンツエディターなどの編集環境でのデフォルトの編集言語)やライブサイト(website)のデフォルトの言語バージョン、ClientLanguage(編集ツール自身のデフォルトの言語)が ja-jp となるようにパッチが構成されていることがわかります。</p>
 <p>これで、ライブサイトや、編集環境のUIおよび編集用のコンテンツの言語がデフォルトで日本語になります。</p>
+</div>
 </div>
 </div>
 

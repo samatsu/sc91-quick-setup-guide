@@ -16,7 +16,7 @@ Indexing Manager を起動して、すべてのインデックスを選択して
 .. figure:: /images/installation/ins-post02.png
 
 次に、**Deploy marketing definitions** をクリックして、マーケティング定義をデプロイします。
-ポップアップダイアログですべての項目選択して、**Deploy** をクリックします。
+ポップアップダイアログですべての項目選択して、 **Deploy** をクリックします。
 この処理を完了するには数分時間がかかります。
 
 .. figure:: /images/installation/ins-post03.png
