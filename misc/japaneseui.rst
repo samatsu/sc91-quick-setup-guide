@@ -31,4 +31,4 @@ Sitecore がインストールされたフォルダーの ``App_Config\Include\E
 
 これで、ライブサイトや、編集環境のUIおよび編集用のコンテンツの言語がデフォルトで日本語になります。
 
-.. figure:: /images/misc/misc-japanese-ui02.png
+
